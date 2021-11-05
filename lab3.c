@@ -15,7 +15,4 @@ int main() {
     
     int size_of_array = sizeof(input_array)/sizeof(int);
     printf("%i", search(input_array,size_of_array));
-
-   
-
 }
