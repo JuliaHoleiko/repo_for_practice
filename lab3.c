@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int search (int a[],int n) {
+int search (int input_array[],int size_of_array) {
     
-    int b=0;
-    for (int i=0; i<n; i++) {
-        b=b^a[i];    
+    int extra_number = 0;
+    for (int i = 0; i < n; i++) {
+        extra_number = extra_number ^ input_array[i];    
     }
-    return b;
+    return extra_number;
 }
 
 int main() {
-    int a[]= {1,2,3,2,1,};
+    int input_array[] = {1,2,3,2,1,};
     
-    int n = sizeof(a)/sizeof(int);
-    printf("%i", search(a,n));
+    int size_of_array = sizeof(input_array)/sizeof(int);
+    printf("%i", search(input_array,size_of_array));
 
    
 
